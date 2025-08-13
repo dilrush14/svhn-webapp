@@ -1,0 +1,26 @@
+body{font-family:system-ui;background:#0b0f19;color:#eaeefb}
+.wrap{max-width:700px;margin:40px auto;background:#141b2d;padding:24px;border-radius:16px}
+.preview{margin-top:12px}
+img{max-width:200px;border-radius:8px}
+button{margin-left:6px;padding:8px 14px;border:0;border-radius:8px;background:#4f7cff;color:#fff}
+pre{background:#0f1629;padding:12px;border-radius:10px;margin-top:12px;white-space:pre-wrap}
+:root { --preview-size: 360px; }  /* try 320, 360, 400, 512 */
+
+.preview { margin-top: 16px; }
+
+:root { --preview-size: 360px; }  /* change to 512px if you want */
+
+.preview { margin-top: 16px; }
+
+/* works for both ids you might be using */
+#previewImg,
+#img {
+  width: var(--preview-size);
+  height: auto;              /* don't force a square */
+  display: block;
+  image-rendering: pixelated;/* crisp 32×32 upscaling */
+  background: transparent;   /* remove square fill */
+  border: 0;                 /* remove outline */
+  box-shadow: none;          /* remove drop shadow */
+  border-radius: 0;          /* no rounded frame */
+}

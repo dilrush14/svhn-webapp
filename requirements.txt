@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+torch==2.6.0
+torchvision
+pillow
+numpy
+python-multipart
